@@ -1,0 +1,20 @@
+@media (max-width:  768px) { 
+    .nav-header-div {
+        .navbar.is-transparent {
+            padding-top: 0 !important;
+            .navbar-brand {
+                .navbar-burger {
+                        color: white;
+                }
+            }
+            .navbar-menu {
+                .navbar-item {
+                    color: #6e3e3e!important;
+                    .has-text-white {
+                        color: #6e3e3e!important;
+                    }
+                }
+            }
+        }
+    }
+ }

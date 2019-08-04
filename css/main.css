@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif; }
+
+.no-border-ip {
+  border: 0px;
+  box-shadow: none !important; }
+
+select, select:hover {
+  border-color: transparent !important;
+  box-shadow: none !important; }
+
+select:focus {
+  box-shadow: 0px 0px 3px 0px #75b2f8 !important;
+  border-radius: 4px !important; }
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.is-border-right {
+  border-right: 1px solid #0a0a0a1f !important; }
+
+.pd-0 {
+  padding: 0 !important; }
+
+section.nav-header-div {
+  position: relative;
+  background: #100e1b url("./../images/bg-header.png") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 780px; }
+  section.nav-header-div .navbar.is-transparent {
+    background: transparent;
+    padding-top: 2rem; }
+  section.nav-header-div .header-text {
+    margin-bottom: 40px; }
+    section.nav-header-div .header-text .header-title {
+      font-size: 4.2em;
+      font-weight: bold;
+      max-width: 830px;
+      line-height: 1.2;
+      margin: 110px auto 20px; }
+  section.nav-header-div .header-filter {
+    max-width: 830px;
+    margin: 0px auto 20px;
+    background: white;
+    border-radius: 20px; }
+  section.nav-header-div .filter--button {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px; }
+  section.nav-header-div .carousel {
+    max-width: 1180px;
+    position: absolute;
+    overflow: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 100px auto 0px auto; }
+    section.nav-header-div .carousel .owl-carousel .owl-stage-outer {
+      height: 270px; }
+    section.nav-header-div .carousel .owl-carousel .owl-nav {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      bottom: 0; }
+      section.nav-header-div .carousel .owl-carousel .owl-nav .owl-prev, section.nav-header-div .carousel .owl-carousel .owl-nav .owl-next {
+        font-size: 55px;
+        width: 40px;
+        outline: 0 !important;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0; }
+      section.nav-header-div .carousel .owl-carousel .owl-nav .owl-next {
+        right: 0;
+        color: white; }
+      section.nav-header-div .carousel .owl-carousel .owl-nav .owl-prev {
+        left: 0;
+        color: white; }
+    section.nav-header-div .carousel .owl-carousel .columns .column {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      justify-content: center; }
+      section.nav-header-div .carousel .owl-carousel .columns .column.flex-left-div {
+        background: #34314c;
+        font-size: 18px; }
+        section.nav-header-div .carousel .owl-carousel .columns .column.flex-left-div p:nth-child(2) {
+          color: #c2c2c2; }
+        section.nav-header-div .carousel .owl-carousel .columns .column.flex-left-div a.button {
+          background: transparent;
+          color: white;
+          margin-top: 20px;
+          padding: 15px;
+          font-size: 14px; }
+      section.nav-header-div .carousel .owl-carousel .columns .column.flex-right-div {
+        padding-left: 0px; }
+
+div.body-content {
+  background: url("../images/bg-body.png") fixed center no-repeat; }
+  div.body-content section.instruction-div {
+    padding-top: 290px; }
+    div.body-content section.instruction-div .columns .left-column {
+      padding-right: 35px; }
+      div.body-content section.instruction-div .columns .left-column h3.title {
+        font-size: 36px; }
+      div.body-content section.instruction-div .columns .left-column .tabs {
+        color: red; }
+      div.body-content section.instruction-div .columns .left-column .button {
+        background: #fd6500;
+        font-size: 14px;
+        padding: 25px;
+        transition: all 0.4s ease-in-out;
+        border: 0; }
+        div.body-content section.instruction-div .columns .left-column .button:hover {
+          background: #e0340b;
+          color: wheat; }
+    div.body-content section.instruction-div .columns .right-column {
+      position: relative; }
+      div.body-content section.instruction-div .columns .right-column img:nth-child(1) {
+        padding-left: 35px;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 10px; }
+      div.body-content section.instruction-div .columns .right-column img:nth-child(2) {
+        position: absolute;
+        z-index: 1;
+        top: 40px;
+        left: 150px; }
+    div.body-content section.instruction-div .text {
+      font-weight: 600;
+      padding-top: 400px;
+      max-width: 750px;
+      margin: 0 auto;
+      padding-bottom: 350px; }
+      div.body-content section.instruction-div .text h3 {
+        font-size: 38px;
+        line-height: 1.2; }
+      div.body-content section.instruction-div .text p {
+        margin-top: 18px; }
+  div.body-content section.service-div .img-block {
+    position: relative; }
+    div.body-content section.service-div .img-block img {
+      position: absolute; }

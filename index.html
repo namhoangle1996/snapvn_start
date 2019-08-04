@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My first Bulma website</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/font-weight.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+    </style>
+  </head>
+  <body>
+    <section class="nav-header-div">
+        <nav class="navbar is-transparent container">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="https://bulma.io">
+                <img src="./images/logo.png"  alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+              </a>
+              <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          
+            <div id="navbarExampleTransparentExample" class="navbar-menu">
+              <div class="navbar-start	">
+                <div class="navbar-item has-text-white">
+                  Chụp ảnh
+                </div>
+              </div>
+          
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="field is-grouped">
+                    <p class="control">
+                      <a class="#" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+                        <span class="has-text-danger	">
+                          Đăng nhập /
+                        </span>
+                      </a>
+                    </p>
+                    <p class="control">
+                      <a class="has-text-white" href="https://github.com/jgthms/bulma/releases/download/0.7.5/bulma-0.7.5.zip">
+                        <span>Đăng kí</span>
+                      </a>
+                    </p>
+                    <p class="control">
+                      <a class="has-text-white" href="https://github.com/jgthms/bulma/releases/download/0.7.5/bulma-0.7.5.zip">
+                        <span>| | Blog</span>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </nav>
+        <div class="header-text has-text-centered has-text-white">
+          <h1 class="header-title container">Chụp ảnh cưới, ảnh kỷ yếu, sự kiện và hơn thế nữa</h1>
+          <p class="has-text-weight-light is-size-4">Kết nối 15.000+ studio và nhiếp ảnh gia toàn quốc</p>
+        </div>
+        <div class="header-filter columns has-text-black	">
+          <div class="column is-10">
+              <div class="columns">
+                  <div class="column is-4">
+                      <input class="input is-border-right no-border-ip" type="text" placeholder="Địa điểm">
+                  </div>
+                  <div class="column is-4">
+                      <div class="field">
+                          <div class="is-border-right">
+                            <div class="select">
+                              <select>
+                                <option>Dịch vụ chụp</option>
+                                <option>Gói 12k</option>
+                              </select>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="column is-4">
+                      <div class="field">
+                          <div class="">
+                            <div class="select">
+                              <select>
+                                <option>Khoảng giá</option>
+                                <option>Dưới 1 triệu</option>
+                                <option>Từ 1 đến 2 triệu</option>
+                                <option>Dưới 4 triệu</option>
+                              </select>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+        </div>
+          <div class="column is-2 filter--button has-background-info flex-center">
+            <a class="is-uppercase has-text-white ">
+              Tìm kiếm
+            </a>
+          </div>
+        </div>
+        <div class="join-us carousel">
+            <div class="owl-carousel">
+                <div class="columns"> 
+                  <div class="column is-6 flex-left-div has-text-centered has-text-white">
+                      <p class="is-uppercase">Tham gia Snap.vn</p>
+                      <p>Tăng tối thiểu 20% doanh thu</p>
+                      <div>
+                          <a class="button is-rounded is-uppercase font-bold">tham gia</a>
+                      </div>
+                  </div>
+                  <div class="column is-6 flex-right-div">
+                      <img src="./images/top-11.jpg" height="100px" alt="">
+                  </div>
+                </div>
+                <div class="columns"> 
+                    <div class="column is-6 flex-left-div has-text-centered has-text-white">
+                        <p class="is-uppercase">Tham gia Snap.vn</p>
+                        <p>Tăng tối thiểu 20% doanh thu</p>
+                        <div>
+                            <a class="button is-rounded is-uppercase font-bold">tham gia</a>
+                        </div>
+                    </div>
+                    <div class="column is-6 flex-right-div">
+                        <img src="./images/top-11.jpg" height="100px" alt="">
+                    </div>
+                  </div>
+                <div class="columns"> 
+                    <div class="column is-6 flex-left-div has-text-centered has-text-white">
+                        <p class="is-uppercase">Tham gia Snap.vn</p>
+                        <p>Tăng tối thiểu 20% doanh thu</p>
+                        <div>
+                            <a class="button is-rounded is-uppercase font-bold">xem ngay</a>
+                        </div>
+                    </div>
+                    <div class="column is-6 flex-right-div">
+                        <img src="./images/top-11.jpg" height="100px" alt="">
+                    </div>
+                  </div>
+              </div>
+        </div>
+    </section>
+    <div class="body-content">
+        <section class="instruction-div container">
+          <div class="columns">
+            <div class="column is-6 left-column has-text-right">
+                <h3 class="title">Hướng dẫn đặt chụp</h3>
+                <div class="tabs"></div>
+                <div class="button is-rounded has-text-white font-bold">Đăng kí ngay</div>
+            </div>
+            <div class="column is-6 right-column">
+              <img src="./images/top2-1.png" alt="">
+              <img src="./images/top2-2.png" alt="">
+            </div>
+          </div>
+         <div class="text has-text-centered">
+           <h3 class="is-italic">"Snap giúp bạn tìm kiếm, so sánh các studio và đặt chụp ảnh dễ dàng như gọi Grab" </h3>
+           <p>DIGITAL TRENDS</p>
+          </div>
+        </section>
+        <section class="service-div">
+            <div class="img-block flex-center">
+              <img class="is-centered-img "src="./images/service-1.png" alt="">
+              <img class="img-2" src="./images/service-2.png" alt="">
+              <img class="img-2" src="./images/service-3.png" alt="">
+              <img class="img-3" src="./images/service-4.png" alt="">
+              <img class="img-3" src="./images/service-5.png" alt="">
+              <img class="img-4" src="./images/service-6.png" alt="">
+            </div>
+        </section>
+      </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>  
+      $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+          loop:true,
+          margin:10,
+          nav: true,
+          items: 2,
+          responsiveClass:true,
+          responsive:{
+              0:{
+                  items:1,
+                  nav:true
+              },
+              600:{
+                  items:1,
+                  nav:false
+              },
+              1000:{
+                  items:2,
+                  nav:true,
+                  loop:false
+              }
+          }
+
+        });
+      });
+    </script>
+
+  </body>
+</html>
