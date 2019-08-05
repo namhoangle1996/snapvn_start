@@ -1,5 +1,7 @@
 @media (max-width:  768px) { 
     .nav-header-div {
+        margin-bottom: 135px;
+        height: 650px !important;
         .navbar.is-transparent {
             padding-top: 0 !important;
             .navbar-brand {
@@ -14,6 +16,65 @@
                         color: #6e3e3e!important;
                     }
                 }
+            }
+        }
+        .header-text {
+            .header-title {
+                font-size: 2em !important;
+            }
+            p {font-size: 15px!important}
+        }
+        .header-filter {
+            box-shadow: 1px 1px 20px 1px #e8d9d833;
+            margin: 0px 20px 10px !important;
+            select {width: 100%;} 
+            .select {width: 100% !important}
+            .is-border-right  {border-right: 0!important;}
+            .column {   
+                .is-10 {
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                }
+                &.filter--button {
+                    border-top-right-radius: 0px;
+                    border-bottom-right-radius: 15px;
+                    border-bottom-left-radius: 15px;
+                }
+            }
+        }
+    }
+    .body-content {
+        section.carousel{
+            .columns {
+                .column {
+                    &.flex-right-div {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+        section.instruction-div {
+            padding-top: 0 !important;
+            .columns {
+                margin: 0 auto;
+                .column {
+                    // &.left-column {padding-right:}
+                    img:nth-child(1) {
+                        position: unset !important;
+                        left: 0px !important;
+                        padding-left: 0px !important;
+                    }
+                    img:nth-child(2) {
+                        display: none;
+                    }
+
+                }
+            }
+            .text {
+                padding-top:25px !important;
+                margin: 0 22px !important;
+                h3 {
+                    font-size: 22px !important; }
             }
         }
     }

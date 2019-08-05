@@ -1,9 +1,49 @@
 @media (max-width: 768px) {
-  .nav-header-div .navbar.is-transparent {
+  .nav-header-div {
+    margin-bottom: 135px;
+    height: 650px !important; }
+    .nav-header-div .navbar.is-transparent {
+      padding-top: 0 !important; }
+      .nav-header-div .navbar.is-transparent .navbar-brand .navbar-burger {
+        color: white; }
+      .nav-header-div .navbar.is-transparent .navbar-menu .navbar-item {
+        color: #6e3e3e !important; }
+        .nav-header-div .navbar.is-transparent .navbar-menu .navbar-item .has-text-white {
+          color: #6e3e3e !important; }
+    .nav-header-div .header-text .header-title {
+      font-size: 2em !important; }
+    .nav-header-div .header-text p {
+      font-size: 15px !important; }
+    .nav-header-div .header-filter {
+      box-shadow: 1px 1px 20px 1px #e8d9d833;
+      margin: 0px 20px 10px !important; }
+      .nav-header-div .header-filter select {
+        width: 100%; }
+      .nav-header-div .header-filter .select {
+        width: 100% !important; }
+      .nav-header-div .header-filter .is-border-right {
+        border-right: 0 !important; }
+      .nav-header-div .header-filter .column .is-10 {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px; }
+      .nav-header-div .header-filter .column.filter--button {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px; }
+  .body-content section.carousel .columns .column.flex-right-div {
+    padding: 0; }
+  .body-content section.instruction-div {
     padding-top: 0 !important; }
-    .nav-header-div .navbar.is-transparent .navbar-brand .navbar-burger {
-      color: white; }
-    .nav-header-div .navbar.is-transparent .navbar-menu .navbar-item {
-      color: #6e3e3e !important; }
-      .nav-header-div .navbar.is-transparent .navbar-menu .navbar-item .has-text-white {
-        color: #6e3e3e !important; } }
+    .body-content section.instruction-div .columns {
+      margin: 0 auto; }
+      .body-content section.instruction-div .columns .column img:nth-child(1) {
+        position: unset !important;
+        left: 0px !important;
+        padding-left: 0px !important; }
+      .body-content section.instruction-div .columns .column img:nth-child(2) {
+        display: none; }
+    .body-content section.instruction-div .text {
+      padding-top: 25px !important;
+      margin: 0 22px !important; }
+      .body-content section.instruction-div .text h3 {
+        font-size: 22px !important; } }
