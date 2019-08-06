@@ -155,7 +155,16 @@
           <div class="columns">
             <div class="column is-6 left-column has-text-right">
                 <h3 class="title">Hướng dẫn đặt chụp</h3>
-                <div class="tabs"></div>
+                <!-- <div class="tabs"> -->
+                <div class="tab">
+                  <div class="columns is-mobile">
+                    <div class="column is-3"><a class="step-rounded"><strong>1</strong><span>Buoc</span></a></div>
+                    <div class="column is-3"><a class="step-rounded"><strong>2</strong><span>Buoc</span></a></div>
+                    <div class="column is-3"><a class="step-rounded"><strong>3</strong><span>Buoc</span></a></div>
+                    <div class="column is-3"><a class="step-rounded"><strong>4</strong><span>Buoc</span></a></div>
+                  </div>
+                </div>
+                <!-- </div> -->
                 <div class="button is-rounded has-text-white font-bold">Đăng kí ngay</div>
             </div>
             <div class="column is-6 right-column flex-center">
@@ -250,7 +259,10 @@
           loop:true,
           margin:10,
           nav: true,
+          // navText: ["<img src='./images/bg-body.png'>","<img src='./bg-header.png'>"],
           items: 2,
+          pagination: false,
+          dots: false,
           responsiveClass:true,
           responsive:{
               0:{
@@ -258,13 +270,12 @@
                   nav:true
               },
               600:{
-                  items:1,
+                  items:2,
                   nav:false
               },
               1000:{
                   items:2,
                   nav:true,
-                  loop:false
               }
           }
 

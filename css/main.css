@@ -104,8 +104,29 @@ section.carousel {
       padding-right: 35px; }
       .body-content section.instruction-div .columns .left-column h3.title {
         font-size: 36px; }
-      .body-content section.instruction-div .columns .left-column .tabs {
-        color: red; }
+      .body-content section.instruction-div .columns .left-column .tab {
+        padding-bottom: 1.5em; }
+        .body-content section.instruction-div .columns .left-column .tab .columns a.step-rounded {
+          box-shadow: 3px 0px 20px 0px #e1c6c6;
+          display: flex;
+          width: 70px;
+          height: 70px;
+          background: #5ebeff;
+          border-radius: 50%;
+          float: right;
+          color: white;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          position: relative;
+          z-index: 2; }
+          .body-content section.instruction-div .columns .left-column .tab .columns a.step-rounded:after {
+            content: "";
+            position: absolute;
+            width: 150px;
+            border: 1px dashed #d39d9d;
+            left: 75px;
+            z-index: 1; }
       .body-content section.instruction-div .columns .left-column .button {
         background: #fd6500;
         font-size: 14px;
