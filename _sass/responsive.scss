@@ -1,4 +1,4 @@
-@media (max-width:  768px) { 
+@media (max-width:  768px) {
     .nav-header-div {
         margin-bottom: 135px;
         height: 650px !important;
@@ -27,10 +27,10 @@
         .header-filter {
             box-shadow: 1px 1px 20px 1px #e8d9d833;
             margin: 0px 20px 10px !important;
-            select {width: 100%;} 
+            select {width: 100%;}
             .select {width: 100% !important}
             .is-border-right  {border-right: 0!important;}
-            .column {   
+            .column {
                 .is-10 {
                     border-top-left-radius: 15px;
                     border-top-right-radius: 15px;
@@ -58,7 +58,7 @@
             .columns {
                 margin: 0 auto;
                 .column {
-                    // &.left-column {padding-right:}
+                    &.left-column {    padding: 0.75rem;}
                     img:nth-child(1) {
                         position: unset !important;
                         left: 0px !important;
