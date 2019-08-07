@@ -319,7 +319,7 @@ section.footer {
            font-size: 21px;
          }
          p{
-           font-size: 16px;
+           font-size: 14px;
            padding: 7px 0px 7px;
            &:not(:last-child){
              border-bottom:1px solid #e6e6e633;
@@ -329,6 +329,16 @@ section.footer {
   }
   .about-me{
     max-width: 1180px;margin: 0 auto;
-    padding: 0 15px 0 15px;
+    padding: 30px 15px 0 15px;
+    .columns {
+        .left-column {
+            .columns {
+                .logo {
+                    font-size: 35px
+                }
+            } 
+        }
+        // .right-column{}
+    }
   }
 }
