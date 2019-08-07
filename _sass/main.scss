@@ -1,5 +1,7 @@
 
 $color-gray: gray;
+$color-orange : #e96d46;
+$font-bold: bold;
 * {
     margin: 0;
     padding: 0;
@@ -22,11 +24,27 @@ select:focus {
     align-items: center;
     justify-content: center;
 }
+.color-gray {
+  color: $color-gray;
+}
+.color-orange {
+  color: $color-orange;
+}
 .is-border-right {
     border-right: 1px solid #0a0a0a1f !important;
 }
+.font-bold {
+   font-weight: 700;
+}
 .pd-0{
     padding: 0 !important;
+}
+.pd-lr-0 {
+  padding-left: 0;padding-right: 0;
+}
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
 }
 .select select:not([multiple]) {
     padding-right: 5.5em;
@@ -72,13 +90,13 @@ section.carousel {
             top: 0;
             bottom: 0;
         .owl-prev , .owl-next {
-            font-size: 55px;
-            width: 40px;
-            outline: 0 !important;
-            margin: auto;
-            position: absolute;
-            height: 270px;
-            line-height: 270px;
+              font-size: 55px;
+              width: 40px;
+              outline: 0 !important;
+              margin: auto;
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
 
         }
         .owl-next {right:0;color: white;}
@@ -137,14 +155,14 @@ section.carousel {
                             justify-content: center;
                             position: relative;
                             z-index: 2;
-                            &:after {
-                                content: "";
-                                position: absolute;
-                                width: 150px;
-                                border: 1px dashed #d39d9d;
-                                left: 75px;
-                                z-index: 1;
-                            }
+                            // &:after {
+                            //     content: "";
+                            //     position: absolute;
+                            //     width: 150px;
+                            //     border: 1px dashed #d39d9d;
+                            //     left: 75px;
+                            //     z-index: 1;
+                            // }
                         }
                     }
                 }
@@ -206,7 +224,7 @@ section.benefit-div {
     }
 }
 section.current-project {
-   background: white;
+   background: white;padding-bottom: 140px;
    .title-text {
        max-width: 550px;
        padding-bottom: 50px;
@@ -215,10 +233,102 @@ section.current-project {
        p {color: $color-gray;font-size: 18}
    }
    .card-img {
-     max-width: 1180px;
-     margin: 0 auto;
      .columns {
+       max-width: 1180px;
+       margin: 0 auto;
         img {position: relative;}
+        .column {
+          img {}
+          .price-date.columns {
+            border-bottom: 1px solid #79554833;
+             .calendar-picker {
+                 width: 100%;
+             }
+          }
+        }
      }
    }
+   .text {
+      padding-top : 50px;
+   }
+}
+section.service {
+  background: #b7b7b733;
+  .container {
+    max-width: 1180px;
+    margin: 0 auto ;
+    .title--info {
+       padding: 0.75rem;
+    }
+  }
+}
+section.service-incentives{
+    padding: 50px 0px 100px;
+  .register{
+    max-width: 700px;
+    padding: 15px;
+    margin: 0 auto;
+    .text {
+      h5 {line-height: 1.4}
+      // p {}
+    }
+    .get-email{
+       margin-top: 30px;
+       input,button{
+          padding: 20px;
+          font-size: 17px;
+          float: left;
+          border: 0;
+      }
+      input {
+          box-shadow: 0px 5px 8px 1px #8080805c;
+          width: 70%;
+          background: #f1f1f147;
+          border-top-left-radius: 35px;
+          border-bottom-left-radius:  35px;
+          &:focus {
+             border: 0;outline: 0;
+          }
+      }
+      button{
+          border-top-right-radius: 35px;
+          border-bottom-right-radius:  35px;
+          width: 30%;
+          background: $color-orange;
+          cursor: pointer;
+      }
+    }
+  }
+}
+section.near-end-footer{
+  background: #e9e6e6;
+  .quotes{
+      max-width: 1180px;
+      padding: 50px 0px 100px;
+      margin: 0 auto ;
+  }
+}
+section.footer {
+  background: #1b203ff5;
+  padding: 50px 0px 100px;
+  .all-service {
+       max-width: 1180px;margin: 0 auto;
+       padding: 0 15px 0 15px;
+       .column {
+         .title {
+           font-size: 21px;
+         }
+         p{
+           font-size: 16px;
+           padding: 7px 0px 7px;
+           &:not(:last-child){
+             border-bottom:1px solid #e6e6e633;
+           }
+         }
+       }
+  }
+  .about-me{
+    max-width: 1180px;margin: 0 auto;
+    padding: 0 15px 0 15px;
+  }
 }

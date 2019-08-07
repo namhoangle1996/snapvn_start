@@ -20,11 +20,28 @@ select:focus {
   align-items: center;
   justify-content: center; }
 
+.color-gray {
+  color: gray; }
+
+.color-orange {
+  color: #e96d46; }
+
 .is-border-right {
   border-right: 1px solid #0a0a0a1f !important; }
 
+.font-bold {
+  font-weight: 700; }
+
 .pd-0 {
   padding: 0 !important; }
+
+.pd-lr-0 {
+  padding-left: 0;
+  padding-right: 0; }
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap; }
 
 .select select:not([multiple]) {
   padding-right: 5.5em; }
@@ -69,8 +86,8 @@ section.carousel {
       outline: 0 !important;
       margin: auto;
       position: absolute;
-      height: 270px;
-      line-height: 270px; }
+      top: 50%;
+      transform: translateY(-50%); }
     section.carousel .owl-carousel .owl-nav .owl-next {
       right: 0;
       color: white; }
@@ -120,13 +137,6 @@ section.carousel {
           justify-content: center;
           position: relative;
           z-index: 2; }
-          .body-content section.instruction-div .columns .left-column .tab .columns a.step-rounded:after {
-            content: "";
-            position: absolute;
-            width: 150px;
-            border: 1px dashed #d39d9d;
-            left: 75px;
-            z-index: 1; }
       .body-content section.instruction-div .columns .left-column .button {
         background: #fd6500;
         font-size: 14px;
@@ -189,7 +199,8 @@ section.benefit-div {
       color: gray; }
 
 section.current-project {
-  background: white; }
+  background: white;
+  padding-bottom: 140px; }
   section.current-project .title-text {
     max-width: 550px;
     padding-bottom: 50px;
@@ -201,8 +212,79 @@ section.current-project {
     section.current-project .title-text p {
       color: gray;
       font-size: 18; }
-  section.current-project .card-img {
+  section.current-project .card-img .columns {
     max-width: 1180px;
     margin: 0 auto; }
     section.current-project .card-img .columns img {
       position: relative; }
+    section.current-project .card-img .columns .column .price-date.columns {
+      border-bottom: 1px solid #79554833; }
+      section.current-project .card-img .columns .column .price-date.columns .calendar-picker {
+        width: 100%; }
+  section.current-project .text {
+    padding-top: 50px; }
+
+section.service {
+  background: #b7b7b733; }
+  section.service .container {
+    max-width: 1180px;
+    margin: 0 auto; }
+    section.service .container .title--info {
+      padding: 0.75rem; }
+
+section.service-incentives {
+  padding: 50px 0px 100px; }
+  section.service-incentives .register {
+    max-width: 700px;
+    padding: 15px;
+    margin: 0 auto; }
+    section.service-incentives .register .text h5 {
+      line-height: 1.4; }
+    section.service-incentives .register .get-email {
+      margin-top: 30px; }
+      section.service-incentives .register .get-email input, section.service-incentives .register .get-email button {
+        padding: 20px;
+        font-size: 17px;
+        float: left;
+        border: 0; }
+      section.service-incentives .register .get-email input {
+        box-shadow: 0px 5px 8px 1px #8080805c;
+        width: 70%;
+        background: #f1f1f147;
+        border-top-left-radius: 35px;
+        border-bottom-left-radius: 35px; }
+        section.service-incentives .register .get-email input:focus {
+          border: 0;
+          outline: 0; }
+      section.service-incentives .register .get-email button {
+        border-top-right-radius: 35px;
+        border-bottom-right-radius: 35px;
+        width: 30%;
+        background: #e96d46;
+        cursor: pointer; }
+
+section.near-end-footer {
+  background: #e9e6e6; }
+  section.near-end-footer .quotes {
+    max-width: 1180px;
+    padding: 50px 0px 100px;
+    margin: 0 auto; }
+
+section.footer {
+  background: #1b203ff5;
+  padding: 50px 0px 100px; }
+  section.footer .all-service {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px; }
+    section.footer .all-service .column .title {
+      font-size: 21px; }
+    section.footer .all-service .column p {
+      font-size: 16px;
+      padding: 7px 0px 7px; }
+      section.footer .all-service .column p:not(:last-child) {
+        border-bottom: 1px solid #e6e6e633; }
+  section.footer .about-me {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px; }
