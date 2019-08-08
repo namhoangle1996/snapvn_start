@@ -1,23 +1,29 @@
-document.addEventListener('DOMContentLoaded', () => {
+'use strict';
+
+document.addEventListener('DOMContentLoaded', function () {
   console.log('Hello Bulma!');
 });
 
 var navbarBurger = document.querySelector('.navbar-burger');
-navbarBurger.onclick = function(e) {
+navbarBurger.onclick = function (e) {
   this.classList.toggle('is-active');
   document.querySelector('.navbar-menu').classList.toggle("is-active");
-} 
+};
 
-function openTab(event, tabId) {
-  tabContent =  document.getElementsByClassName('tab-content'); 
-  for (i=0;i< tabContent.length;i ++) {
-      tabContent[i].style.display = 'none'
-  }
-  tabLinks = document.getElementsByClassName('tab-links');
-  for (i=0;i< tabContent.length;i ++) {
-    tabLinks[i].className = tabLinks[i].className.replace('is-active',' ');
-  }
+// modal
 
-  document.getElementById(tabId).style.display = 'block' ;
-  event.currentTarget.className += " is-active" ;
-}
+// var btnOpenModal =  document.querySelector('.modal-button') ;
+// var ModalOpen =  document.querySelector('.modal-button').getAttribute("data-target");
+
+// btnOpenModal.onclick = function(e) {
+//   console.log('clicked');
+//   document.querySelector("#" + ModalOpen).classList.add("is-active");
+// } 
+
+// var btnCloseModal =  document.querySelector('.modal-close');
+// btnCloseModal.onclick = function(e) {
+//   document.querySelector("#" + ModalOpen).classList.remove("is-active");
+// }
+
+
+// end model

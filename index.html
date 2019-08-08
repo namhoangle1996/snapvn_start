@@ -159,11 +159,29 @@
                 <!-- <div class="tabs"> -->
                 <div class="tab">
                   <div class="columns is-mobile">
-                    <div class="column is-3"><a class="step-rounded"><strong>1</strong><span>Buoc</span></a></div>
-                    <div class="column is-3"><a class="step-rounded"><strong>2</strong><span>Buoc</span></a></div>
-                    <div class="column is-3"><a class="step-rounded"><strong>3</strong><span>Buoc</span></a></div>
-                    <div class="column is-3"><a class="step-rounded"><strong>4</strong><span>Buoc</span></a></div>
+                    <div class="column is-3 tablinks is-active" onclick="openTab(event,'pictures')"><a class="step-rounded"><strong>1</strong><span>Buoc</span></a></div>
+                    <div class="column is-3 tablinks" onclick="openTab(event,'musics')"><a class="step-rounded" ><strong>3</strong><span>Buoc</span></a></div>
+                    <div class="column is-3 tablinks" onclick="openTab(event,'sound')"><a class="step-rounded"  ><strong>2</strong><span>Buoc</span></a></div>
+                    <div class="column is-3 tablinks" onclick="openTab(event,'life')"><a class="step-rounded"   ><strong>4</strong><span>Buoc</span></a></div>
                   </div>
+                </div>
+                <div class="tab-content is-flex">
+                    <div id="pictures" class="tab-content">
+                        <h4 class="title">Pictures</h4>
+                        <p class="color-gray">Nhập thông tin về nhu cầu của bạn gồm dịch vụ, địa điểm và khoảng giá để tìm kiếm Nhà cung cấp </p>
+                      </div>
+                      <div id="sound" class="tab-content">
+                          <h4 class="title">sound</h4>
+                          <p class="color-gray">  đặt chụp ảnh dễ dàng như gọi Grab Snap giúp bạn tìm kiếm, so sánh các studio và </p>
+                        </div>
+                      <div id="musics" class="tab-content">
+                          <h4 class="title">Music</h4>
+                          <p class="color-gray">Nhập thông tin về nhu cầu của bạn gồm dịch vụ, địa điểm và khoảng giá để tìm kiếm Nhà cung cấp </p>
+                      </div>
+                      <div id="life" class="tab-content">
+                          <h4 class="title">Life</h4>
+                          <p class="color-gray">Snap giúp bạn tìm kiếm, so sánh các studio và đặt chụp ảnh dễ dàng như gọi Grab </p>
+                      </div>
                 </div>
                 <!-- </div> -->
                 <div class="button is-rounded has-text-white font-bold">Đăng kí ngay</div>
@@ -308,10 +326,10 @@
                  <h5 class="title is-4 is-marginless">Hãy là người đầu tiên biết về ưu đãi đặc biệt</h5>
                  <p class="color-gray">Giá đã tốt lại rẻ hơn cập nhật hàng ngày</p>
                </div>
-               <div class="get-email">
-                 <input type="text" class="input-text" placeholder="Enter your email" name="" value="">
+               <div class="get-email is-fullwidth">
+                 <input type="text" class="input-text is-fullwidth" placeholder="Enter your email" name="" value="">
                  <a href="#">
-                   <button type="button" name="button" class="is-uppercase has-text-white">đăng kí</button>
+                   <button type="button" name="button" class="is-uppercase is-fullwidth has-text-white">đăng kí</button>
                  </a>
                </div>
            </div>
@@ -403,6 +421,16 @@
                  </div>
              </div>
       </section>
+      <!-- <a class="button is-primary is-large modal-button" data-target="modal-bis">Launch image modal</a>
+      <div class="modal is-active" id="modal-bis">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <p class="image is-4by3">
+            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="">
+          </p>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div> -->
 
 
     <script src="./lib/main.js"></script>
@@ -436,7 +464,23 @@
           }
 
         });
-    }
+        
+     openTab = function(event, tabId) {
+        tabContent = document.querySelectorAll('.tab-content');
+        for (i = 0; i < tabContent.length; i++) {
+          tabContent[i].style.visibility = 'hidden';
+          tabContent[i].style.display = 'none';
+        }
+        tabLinks = document.querySelectorAll('tablinks');
+        for (i = 0; i < tabContent.length; i++) {
+          // tabLinks[i].className = tabLinks[i].className.replace('is-active', ' ');
+        }
+
+        document.getElementById(tabId).style.visibility = 'visible';
+        document.getElementById(tabId).style.display = 'block';
+        event.currentTarget.className += " is-active";
+      }
+   }
 
   //calendar
   //   var calendars = bulmaCalendar.attach('[type="date"]');
@@ -467,7 +511,9 @@
             calendar_list[i].value = new Date().toDateInputValue();
         }
 
+
     </script>
+    
 
   </body>
 </html>

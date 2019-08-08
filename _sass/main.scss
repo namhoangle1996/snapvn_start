@@ -24,6 +24,9 @@ select:focus {
     align-items: center;
     justify-content: center;
 }
+.is-fullwidth {
+    width: 100%;
+}
 .color-gray {
   color: $color-gray;
 }
@@ -166,6 +169,9 @@ section.carousel {
                         }
                     }
                 }
+                .tab-content{
+                    display: none;
+                }
                 .button{background: #fd6500;font-size: 14px;padding: 25px; transition: all 0.4s ease-in-out;border:0;
                     &:hover {background: #e0340b;color: wheat;}
                 }
@@ -201,12 +207,20 @@ section.carousel {
     section.service-div{
         .img-block{
             position: relative;
+            max-width: 740px;margin: 0 auto;
             img {
                 position: absolute;
-                &.img-1 {z-index: 4;    width: 350px;   height: 250px;}
-                &.img-2 {z-index: 3;}
-                &.img-3 {z-index: 2;}
-                &.img-4 {z-index: 1;}
+                &.img-1 {z-index: 4;    max-width: 350px;   max-height: 250px;}
+                &.img-2 {
+                    z-index: 3; width: 250px;height: 150px;top: 20px;
+                    &:nth-child(even){right: 0}
+                    &:nth-child(odd) {left: 0}
+                }
+                &.img-3 {z-index: 2;
+                   &:nth-child(even) {top: -56px;right: -34px;}
+                   &:nth-child(odd)  {left: -60px;top: -101px;}
+                }
+                &.img-4 {z-index: 1;right: 0;bottom: -48px;}
             }
         }
     }
@@ -238,7 +252,7 @@ section.current-project {
        margin: 0 auto;
         img {position: relative;}
         .column {
-          img {}
+        //   img {}
           .price-date.columns {
             border-bottom: 1px solid #79554833;
              .calendar-picker {
@@ -273,27 +287,27 @@ section.service-incentives{
       // p {}
     }
     .get-email{
-       margin-top: 30px;
+        margin-top: 30px;
+        grid-template-columns: 70fr 30fr;
+        justify-content: center;
+        display: grid;
        input,button{
           padding: 20px;
           font-size: 17px;
-          float: left;
-          border: 0;
+          transition : all 0.4s ease-in-out;
+          border: 0;box-shadow: 0px 5px 8px 1px #8080805c;
+          &:focus, &:hover {
+            border: 0;outline: 0;box-shadow: 0px 5px 20px 1px #5f5b5b5c;
+         }
       }
       input {
-          box-shadow: 0px 5px 8px 1px #8080805c;
-          width: 70%;
           background: #f1f1f147;
           border-top-left-radius: 35px;
           border-bottom-left-radius:  35px;
-          &:focus {
-             border: 0;outline: 0;
-          }
       }
       button{
           border-top-right-radius: 35px;
           border-bottom-right-radius:  35px;
-          width: 30%;
           background: $color-orange;
           cursor: pointer;
       }
