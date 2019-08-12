@@ -140,8 +140,9 @@ section.carousel {
           justify-content: center;
           position: relative;
           z-index: 2; }
-      .body-content section.instruction-div .columns .left-column .tab-content {
-        display: none; }
+      .body-content section.instruction-div .columns .left-column .tab-content:not(:nth-child(1)) {
+        display: none;
+        width: 100%; }
       .body-content section.instruction-div .columns .left-column .button {
         background: #fd6500;
         font-size: 14px;

@@ -169,8 +169,9 @@ section.carousel {
                         }
                     }
                 }
-                .tab-content{
+                .tab-content:not(:nth-child(1)){
                     display: none;
+                    width: 100%;
                 }
                 .button{background: #fd6500;font-size: 14px;padding: 25px; transition: all 0.4s ease-in-out;border:0;
                     &:hover {background: #e0340b;color: wheat;}
@@ -350,7 +351,7 @@ section.footer {
                 .logo {
                     font-size: 35px
                 }
-            } 
+            }
         }
         // .right-column{}
     }
