@@ -58,7 +58,9 @@
             .columns {
                 margin: 0 auto;
                 .column {
-                    &.left-column {    padding: 0.75rem;}
+                    &.left-column {    padding: 0.75rem;
+                       h3.title {text-align: center;font-size: 27px; padding-top: 10px;}
+                    }
                     img:nth-child(1) {
                         position: unset !important;
                         left: 0px !important;

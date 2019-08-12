@@ -38,6 +38,10 @@
       margin: 0 auto; }
       .body-content section.instruction-div .columns .column.left-column {
         padding: 0.75rem; }
+        .body-content section.instruction-div .columns .column.left-column h3.title {
+          text-align: center;
+          font-size: 27px;
+          padding-top: 10px; }
       .body-content section.instruction-div .columns .column img:nth-child(1) {
         position: unset !important;
         left: 0px !important;
