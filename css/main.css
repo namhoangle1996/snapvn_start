@@ -144,6 +144,7 @@ section.carousel {
         display: none;
         width: 100%; }
       .body-content section.instruction-div .columns .left-column .button {
+        margin-top: 25px;
         background: #fd6500;
         font-size: 14px;
         padding: 25px;
